@@ -1,0 +1,13 @@
+.card {
+  border:1px solid black;
+  background:orange;
+  width:300px;
+}
+.card h1 {
+  color: blue;
+  font-size: 40px;
+}
+.card h2 {
+  color: blueviolet;
+  font-size: 26px;
+}

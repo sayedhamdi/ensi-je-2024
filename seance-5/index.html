@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+  <script type="text/babel">
+    // functional programming
+    // procedural programming
+    // oop programming
+
+    // imperative programming
+    function Card({fullname, jobTitle}){
+
+      return (
+        <div>
+            <h1>{fullname} </h1>
+            <h2>{jobTitle}</h2>
+          </div>
+      )
+    }
+    
+    React.createElement("h1")
+
+    function Time() {
+      return (
+        <div>
+          <h1>{new Date().toLocaleTimeString()}</h1>
+
+          <Card fullname="Kais Said" jobTitle="Président of Tunisia">
+          </Card>
+
+          <Card fullname="Joe biden" jobTitle="Président of the US"/>
+
+
+          <Card fullname="Ahmed Mohsen" jobTitle="Infulencer"/>
+        </div>
+      );
+    }
+
+    
+    let root = document.querySelector("#root");
+
+
+    ReactDOM.render(<Time />, root);
+
+    // declarative programming
+  </script>
+</html>
